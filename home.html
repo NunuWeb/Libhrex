@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libhrex</title>
+    <link rel="icon" href="logo1.png" type="image/icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .logo{
+            width: 80px;
+            height: 80px;
+        }
+        .bgcolorgrad{
+            background: linear-gradient(#94e4f06b,#17a2b8);
+        }
+        .social{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-info" style="width: 100%; position: fixed; z-index: 1;">
+        <div class="row">
+            <div class="col-sm-4 col-9 pl-5"><img src="logo.png" class="logo"></div>
+            <div class="col-sm-8 col-3 my-auto">
+                <nav class="navbar navbar-expand-sm navbar-light">
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-haspopup="true" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01" >
+                        <ul class="nav nav-tabs ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#products">Products</a>
+                            </li>
+                            <li>
+                              <a class="nav-link text-white" href="#about">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white" href="#contact">Contact Us</a>
+                            </li>
+                          </ul>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="pl-4 bgcolorgrad" id="home" style="padding-top: 5rem;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 my-auto">
+                  <h1>hai guys</h1>
+                  <img src="" alt="" class="image-fluid mx-auto rounded-circle">
+                  <!--Grid column-->
+                  <div class="col-md-6 text-center">
+                    
+                  </div>
+                </div>
+                <!--Grid column-->
+                <div class="col-md-6 mb-3">
+                    <!--Section heading-->
+                    <h2 class="h1-responsive font-weight-bold text-center my-4">Request Call back</h2>
+                    <!--Section description-->
+                    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Fill the form. Our team will reach you</p>
+                    <!--Form-->
+                    <form class="needs-validation" id="contact-form" novalidate>
+                        <div class="form-row">
+                          <div class="col-sm-6">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name" required>
+                            <div class="invalid-feedback">
+                              Enter Name!
+                            </div>
+                          </div>
+                            <div class="col-sm-6">
+                              <label for="email">Email</label>
+                              <input type="Email" class="form-control" id="email" placeholder="Email" required>
+                              <div class="invalid-feedback">
+                                Enter email!
+                              </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="col-sm-6">
+                                <label for="mobile">Mobile</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <select id="country-code" class="form-control">
+                                            <option selected>+91</option>
+                                            <option >+966</option>
+                                            <option >+971</option>
+                                        </select>
+                                    </div>
+                                    <input type="tel" class="form-control" id="mobile" placeholder="Mobile" pattern="[5-9]{1}[0-9]{8,9}" required>
+                                    <div class="invalid-feedback">
+                                        Enter a valid mobile number!
+                                    </div>
+                                </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <label for="mobile">Landline</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <select id="country-code" class="form-control">
+                                        <option selected>+91</option>
+                                        <option >+966</option>
+                                        <option >+971</option>
+                                    </select>
+                                </div>
+                                <input type="tel" class="form-control" id="mobile" placeholder="Mobile" pattern="[0]{1}[1-5]{1}[0-9]{8,9}">
+                                <div class="invalid-feedback">
+                                    Enter a valid landline number!
+                                </div>
+                            </div>
+                      </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-12">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-12">
+                            <label for="message">Your Message</label>
+                            <textarea type="text" id="message" name="message" rows="3" class="form-control md-textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                              <label class="form-check-label" for="invalidCheck">
+                                Agree to terms and conditions
+                              </label>
+                              <div class="invalid-feedback">
+                                You must agree before submitting.
+                              </div>
+                            </div>
+                        </div>
+                        <div class="text-center text-md-left">
+                            <button class="btn text-white btn-primary btn-lg">Send</button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-3 pl-4 bgcolorgrad" id="products">
+        <div class="container-fluid">
+            <h2 class="text-center">Products</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 p-2">
+                    <div class="card">
+                        <img class="card-img-top" src="https://4.imimg.com/data4/HI/DB/MY-2257033/mechanical-oil-flow-meter-500x500.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Flow meter</h5>
+                          <p class="card-text">Details and social media links supplying</p>
+                          <a href="#" class="btn btn-primary">More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 p-2">
+                    <div class="card">
+                        <img class="card-img-top" src="https://www.instrumart.com/assets/Krohne-H250-RR-360.jpg?width=360&height=360&scale=upscalecanvas&paddingWidth=20&bgcolor=fff" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Rotameter</h5>
+                          <p class="card-text">Details and social media links supplying</p>
+                          <a href="#" class="btn btn-primary">More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 p-2">
+                    <div class="card">
+                        <img class="card-img-top" src="https://image.made-in-china.com/202f0j00eVQfRjiybNcY/RS485-4-20mA-Beer-Milk-Electromagnetic-Flow-Meter-Gauge.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Digital flow meter</h5>
+                          <p class="card-text">Details and social media links supplying</p>
+                          <a href="#" class="btn btn-primary">More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 p-2">
+                    <div class="card">
+                        <img class="card-img-top" src="https://image.made-in-china.com/202f0j00eVQfRjiybNcY/RS485-4-20mA-Beer-Milk-Electromagnetic-Flow-Meter-Gauge.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Digital flow meter</h5>
+                          <p class="card-text">Details and social media links supplying</p>
+                          <a href="#" class="btn btn-primary">More...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-3 pl-4 bgcolorgrad" id="about">
+        <div class="container-fluid">
+            <h2 class="text-center">About Us</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 p-2">
+                    <div class="card" >
+                        <img class="card-img-top" src="" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Name</h5>  
+                          <h6 class="card-title">Position</h6>
+                          <p class="card-text">Details and social media links</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 p-2">
+                    <div class="card">
+                        <img class="card-img-top" src="" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Name</h5>  
+                          <h6 class="card-title">Position</h6>
+                          <p class="card-text">Details and social media links</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 p-2">
+                    <div class="card">
+                        <img class="card-img-top" src="" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Name</h5>  
+                          <h6 class="card-title">Position</h6>
+                          <p class="card-text">Details and social media links</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 p-2">
+                    <div class="card">
+                        <img class="card-img-top" src="" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Name</h5>  
+                          <h6 class="card-title">Position</h6>
+                          <p class="card-text">Details and social media links</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-3 pl-4 bgcolorgrad" id="contact">
+        <div class="container-fluid">
+            <h2 class="text-center">Contact Us</h2>
+            <div class="row">
+                <div class="col-sm-3 p-2">
+                    <h3>Address</h3>
+                    <p>Libhrex <br> Opposite New Bustand <br> Manjeri &emsp; 676122 <br> Malappuram &emsp; Kerala <br> India</p>
+                </div>
+                <div class="col-sm-3 p-2">
+                    <h3> Phone</h3>
+                    <p>+91 9876543210</p>
+                    <h3> Email</h3>
+                    <p>info@libhrex.com</p>
+                </div>
+                <div class="col-sm-3 p-2">
+                    <h3>Location</h3>
+                    <p><i class="fa-solid fa-location-dot fa-xl social"></i>
+                    googlemap link</p>
+                </div>
+                <div class="col-sm-3 p-2">
+                    <h3>Follow us</h3>
+                    <p><a href=""><i class="fa-brands fa-facebook fa-xl social"></i></a>
+                    facebook page link
+                    <br>
+                    <a href=""><i class="fa-brands fa-instagram fa-xl social"></i></a>
+                    instagram page link</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-info">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center text-white">
+                    <a href=""><i class="fa-brands fa-facebook fa-xl social"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram fa-xl social"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin fa-xl social"></i></a>
+                    <br>
+                    <i class="fa-regular fa-copyright">NunuWebdevelopers</i>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+    <script src="https://kit.fontawesome.com/a3e83fbb6e.js" crossorigin="anonymous"></script>
+    <script src="form.js"></script>
+
+</body>
+</html>
